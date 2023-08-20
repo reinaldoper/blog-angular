@@ -1,13 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DataSharingService } from 'src/app/components/DataSharingService';
+import { Post } from 'src/app/components/Post';
 
-interface Post {
-  title: string;
-  id: string;
-  photo: string;
-  article: string;
-  date: string;
-}
 
 @Component({
   selector: 'app-details',
