@@ -1,0 +1,9 @@
+<ul class="overflow">
+  <li *ngFor="for let post of posts">
+    <img src={{post.photo}} alt="photo" />
+    <p class="date">{{post.date}}</p>
+    <p class="title">{{post.title}}</p>
+    <p class="article">{{post.article}}</p>
+    <button class="btn btn-primary" (click)="ButtonClick(post.id)">More details</button>
+  </li>
+</ul>
