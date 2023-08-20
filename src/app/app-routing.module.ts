@@ -6,11 +6,15 @@ import { DetailsComponent } from './page/details/details.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: HomeComponent, pathMatch: 'full',
   },
   {
     path: 'details',
     component: DetailsComponent,
+  },
+  {
+    path: '**',
+    component: HomeComponent,
   }
 ];
 
